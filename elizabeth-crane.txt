@@ -1,0 +1,209 @@
+https://codepen.io/eacrane/pen/PoZwKYq
+
+---
+
+1. What is Semantic HTML? 
+Semantic HTML is HTML that uses tags to give meaning to the mark-up of the page. For instance,
+using an <h1></h1> element would indicate that the section within the elements is the most
+important information on the page, worth of the heading 1 tag.
+
+2. What is HTML used for? 
+HTML is used as the initial mark-up for a page, to give it a basic structure.
+
+3. What is an attribute and where do we put it? 
+An attribute is additional information given to an html tag, such as where a hyperlink should lead to,
+or the location of an image the tag should display.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+The <h1> tag is used to indicate the most important piece of information on a page. There should only
+be one a page.
+
+5. Name two tags that have required attributes
+ -Anchor tags (eg: <a href="http://www.google.com/">Google</a>)
+ -Image tags (eg: <img src="https://www.factinate.com/wp-content/uploads/2018/03/homerinternal.jpg" />)
+
+6. What do we put in the head of our HTML document? 
+The head of the html document is where you put information that you want to convey to the browser, but don't
+want to display on the page. An example would be a link to a CSS stylesheet. The information is important
+to the page, but does not need to appear on the page itself.
+
+7. What is an id? 
+An id is a type of identifying attribute for an html element.
+
+8. What elements can I add an id to? 
+Ids are global attributes and can be added to any element that would be used to display data.
+
+9. How many times can I use the same id on a page? 
+You CAN use the same id multiple times, but you SHOULD only use it once.
+
+10. What is a class? 
+A class is another type of identifying attribute.
+
+11. What elements can I add a class to? 
+Classess are also global attributes that can be added to any element that would be used for displaying data.
+
+12. How many times can I use the same class on a page? 
+As many times as you please, but same class identification should be reserved for similar pieces of data.
+
+13. How do I get my link to open in a new tab?
+With the target="_blank" attribute
+
+14. What is the alt attribute in the image tag used for? 
+An alt attribute would be used to display given information in the even that the image was unavailable.
+So, if you were trying to display a picture of Homer Simpson, but the image didn't load, using the alt attribute
+alt="Homer Simpson" would let a person viewing your page know that there should have been a photo of 
+Homer Simpson there.
+
+15. How do I reference an id?
+#[name]
+
+16. What is the difference between a section and a div
+A section tag dictates a section of the html, whereas a div tag only indicates a division between groups of data.
+Sections give more infomration about what is going on with the data on the page, divs are generic markers.
+
+17. What is CSS used for? 
+CSS is used to style marked-up html for a page.
+
+18. How to we select an element? Example - every h2 on the page
+h2 {
+}
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Classes are used to isolate types of information. They would be used if you have similar sets of data that can
+be edited together. Ids are used to isolate a single piece of information that should be edited on its own.
+	-Class example:
+		changing the font of a group of information including a heading and a paragraph
+	-ID example:
+		changing the color of a specific paragraph, but leaving all other paragraphs untouched
+
+20. How do we select classes in CSS?
+.[name]
+
+21. How do we select a p element with a single class of “human””?
+.human p {
+}
+
+22. What is a parent child selector? When would this be useful? 
+A parent child selector allows you to further break down your selection by indicating that you would want
+to edit all similar parts of a certain type of parent.
+Example:
+		div > p {
+		}
+This would show that you want all p tags that are nestled within div tags to have the same styling attributes.
+
+23. How do you select all links within a div with the class of sidebar?
+div .classbar p {
+}
+    
+24. What is a pseudo selector?
+A pseudo selector defines how a certain selector should act when confronted with a particular situation.
+Example: 
+		h1:hover {
+  		  color: #e6bf31;
+		}
+This would mean that no matter what the standard rules for the h1 selector are, if the mouse is over h1
+on the page, the color should change to #e6bf31.
+
+25. What do we use to change the spacing between lines?
+line-height: [value];
+
+26. What do we use to change the spacing between letters?
+letter-spacing: [value];
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+
+28. How do I add a 1px border around my div that is dotted and black?
+div {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: black;
+}
+
+29. How do I select everything on the page? 
+*{
+}
+
+30. How do I write a comment in CSS?
+/* comment */
+
+31. How do I find out what file I am in, when I am using the command line? 
+pwd
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm [name]
+
+34. Why should I use version control? 
+It tracks every change to a file. So, if you needed to return to an earlier version of your work,
+you can do so without needing to save multiple copies of the same file. It also allows for you and your
+team to each complete different tasks on a file without overwriting or rewriting one another's work.
+
+35. How often should I commit to github?
+Whenever you have made a significant change to a file, and would like to save that version of your work.
+
+36. What is the command we would use to push our repo up to github? 
+git push
+
+37. Walk me through Lambda's git flow. 
+-Step 1: Fork the assignment repo, and make sure you are working on your version
+-Step 2: Add TL as collaborator
+-Step 3: Clone to your computer using Git
+-Step 4: Create a new branch using "firstName-lastName" model for its name
+-Step 5: Submit a Pull Request, using your version as the base-fork; add TL as reviewer
+
+---
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+Inline elements do not start on a new line. Block elements start on a different line, and take up all 
+space available within their part of the box.
+
+2. What happens when an element is positioned absolutely? 
+An absolute position means that the element will always be in the same place, relative to its closest
+positioned ancestor. So, if you had a static image, an element given absolute position to the upper right
+of that static image, would always appear on the upper right of that image despite changing screen size or
+scrolling.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+.example {
+  display: inline;
+  width: [value];
+}
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default
+   and 1 element that is display inline-block by default
+	Block:
+		<address>
+		<blockquote>
+		<section>
+	Inline:
+		<span>
+		<a>
+		<img>
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, 
+   how do we make all elements respect the width we've given them?
+-The box model a series of boxes that surround every html element:
+
+		------------------top--------------------
+		|  --------------margin---------------	|
+		|  |	---------border----------    |  |
+                |  |    |    ----padding----    |    |  |
+		|  |	|    |	[content]  |    |    |  |
+   		|  |	|    ---------------    |    |  |
+		|  |	-------------------------    |  |
+ 		|  -----------------------------------  |
+		-----------------------------------------
+
+-You can "fix" the boxel model using different sizing rules to change things like the different
+pixel and percentage values of the different box segments.
+
+
+
+ 
